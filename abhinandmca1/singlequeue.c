@@ -18,7 +18,7 @@ struct node
 	newnode->link=NULL;
 	printf("\n ENTER THE ELEMENT TO INSERT \n");
 	scanf("%d",&newnode->data);
-if(head=NULL){
+if(head==NULL){
 head=newnode;
 }
 else{
@@ -49,7 +49,7 @@ if(head==NULL){
 }
 printf("\n ELEMENTS IN QUEUE ARE \n");
 while(temp!=NULL){
- printf("%d",temp->data);
+ printf("%d ",temp->data);
  temp=temp->link;
  }
 }
