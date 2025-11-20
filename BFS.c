@@ -26,10 +26,10 @@ void BFS(int graph[MAX][MAX],int start,int n)
   int visited[MAX]={0};
   visited[start]=1;
   queue[rear++]=start;
-  printf("BFS Traversal");
+  printf("BFS Traversal:\n");
  while(front<rear){
  	int current=queue[front++];
- 	printf("%d",current);
+ 	printf("%d ",current);
  	for(int i=0;i<n;i++){
  	 if(graph[current][i]==1 && !visited[i]){
  	 visited[i]=1;
